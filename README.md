@@ -8,7 +8,7 @@
     ```powershell
     mkdir c:\git\GiraffeAsAService
     cd c:\git\GiraffeAsAService
-    dotnet new giraffe # Would --framework net461 prevent the need for the next step?
+    dotnet new giraffe
     ```
 1. Open `GiraffeAsAService.fsproj` file in an editor, and change:
     1. `TargetFramework` from `netcoreapp2.0` to `net461`
