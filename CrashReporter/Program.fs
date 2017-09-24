@@ -42,7 +42,7 @@ let crashReportHandler =
         task {
             let! x = ctx.BindJson<CrashReport>()
 
-            return! json { Response = "OK"; Report = x } next ctx
+            return! json { Response = sprintf "OK (User is interactive: %A)" Environment.UserInteractive; Report = x } next ctx
         }
 
 let webApp =
